@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 const LoginForm = () => {
-  let num = 1;
+  
   const [form, setForm] = useState({
     userId: '',
     userPw: '',
