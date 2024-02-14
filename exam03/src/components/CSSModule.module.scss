@@ -5,6 +5,10 @@
     }
 }
 
+.on {
+    border: 2px solid black;
+}
+
 :global .title {
     color: red;
     &.on {
