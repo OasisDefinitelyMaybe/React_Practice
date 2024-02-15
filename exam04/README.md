@@ -1,4 +1,8 @@
-.prettierc
+# 설정
+
+- .prettierc
+
+```json
 {
   "singleQuote": false,
   "semi": true,
@@ -7,23 +11,32 @@
   "printWidth": 80,
   "trailingComma": "all"
 }
+```
 
-jsconfig.json
+- jsconfig.json
+
+```json
 {
   "compilerOptions": {
     "target": "ES6"
   }
 }
+```
 
-의존성
-react-router-dom : 라우터
-sass, styled-components, classnames : 스타일링 목적
-@loadable/component : 지연로딩
-immer : 불변성 관리
-axios : ajax
-i18next, react-i18next : 메세지, 다국어 처리
-react-helmet-async : head 태그 내부 구성을 변경할때
+# 의존성
 
+- react-router-dom : 라우터
+- sass, styled-components, classnames : 스타일링 목적
+- @loadable/component : 지연로딩
+- immer : 불변성 관리
+- axios : ajax
+- i18next, react-i18next : 메세지, 다국어 처리
+- react-helmet-async : head 태그 내부 구성을 변경할때 
+
+```
 yarn add react-router-dom sass styled-components classnames @loadable/component immer axios i18next react-i18next
+```
 
+```
 npm i react-router-dom sass styled-components classnames @loadable/component immer axios i18next react-i18next
+```
