@@ -1,9 +1,14 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Navigate, NavLink } from 'react-router-dom';
+import classNames from 'classnames';
 
 const Header = () => {
   const navigate = useNavigate();
+  const isLogin = true;
 
+  if (!isLogin) {
+    return <Navigate to="/login" />;
+  }
   return (
     <>
       <h1>헤더 영역</h1>
@@ -19,6 +24,13 @@ const Header = () => {
       <button type="button" onClick={() => navigate(1)}>
         FORWARD
       </button>
+
+      <NavLink
+        to="/about"
+        className={({ isActive }) => classNames({ on: isActive })}
+      >
+        About 페이지
+      </NavLink>
     </>
   );
 };
